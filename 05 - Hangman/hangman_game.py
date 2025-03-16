@@ -50,6 +50,6 @@ while (attempts < max_attempts):
 
 if (found):
     score = 1000 - (attempts*100)
-    print(f"\nCongratulations! You found the word!!!\nThe word was: {word}.\nNumber of guesses: {attempts}\nScore: {score}\n")
+    print(f"\nCongratulations! You found the word!!!\nThe word was: {word}\nNumber of incorrect guesses: {attempts}\nScore: {score}\n")
 else:
     print(f"\nUh oh, you were unable to find the word :(\nThe word was: {word}\nWhy don't you try again?")
