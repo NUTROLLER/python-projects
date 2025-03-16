@@ -4,8 +4,10 @@ import webbrowser
 
 #To get the random article, a function:
 def get_random_article():
+    print("Getting article...")
     while True:
         try:
+            print("Article Found!")
             title = wikipedia.random()
             page = wikipedia.page(title)
             return page
