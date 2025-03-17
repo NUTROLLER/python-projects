@@ -14,9 +14,9 @@ except:
 if fetched:
     print("Latest Headlines:\n")
     headlines = soup.find_all("h2")
+    summary = soup.find_all("p", 'data-testid="card-description"')
     for idx,h in enumerate(headlines[:5],1):
         print(f"{idx}. {h.get_text(strip=True).removesuffix("<!-- -->")}")
-
 else:
     print("Please try again later!")
 
