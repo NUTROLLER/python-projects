@@ -5,13 +5,12 @@ def play():
     global k
     k = 0
     print("Welcome to Tic-Tac-Toe!")
+    #Generate a 3x3 matrix
     t = [ ["_"]*3 for i in range(3)]
     global gameEnded
     gameEnded = False
-    #Generate a 3x3 matrix
     for i in t:
         print(i)
-    #If 1, then human plays first (implement later)
         #Input:
     toss = random.randint(0,1)
     user_character = str(input("Your choice (X or O): ")).upper().strip()
@@ -22,8 +21,9 @@ def play():
             computer_character = "O"
         else:
             computer_character = "X"
+    #If 1, then human plays first
             toss = random.randint(0, 1)
-        if toss == 0:
+        if toss == 1:
             print("You play first!")
         else:
             print("Computer plays first!")
